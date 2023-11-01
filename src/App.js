@@ -13,7 +13,7 @@ function App() {
       <QueryClientProvider client={queryClient}>
       <AppBar />
         <Routes>
-          <Route exact path="/product" element={<Product />} />
+          <Route index  element={<Product />} />
           <Route exact path="/Shelve" element={<Shelve />} />
         </Routes>
       </QueryClientProvider>
