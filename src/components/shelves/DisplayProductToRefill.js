@@ -102,12 +102,12 @@ function DisplayProductToRefill() {
         clearError()
         try {
           const products = await get(`shelves/products-to-refill/${formik.values.productID}`); // 'products' is the endpoint you want to fetch data from
-          console.log(products); // Handle the fetched data as needed
+         
           setSingleData([products]);
         
         } catch (error) {
             setSingleData([]);
-            console.log(error)
+            
         //   console.error(error); // Handle errors if the request fails
         }
       };

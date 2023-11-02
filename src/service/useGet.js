@@ -13,7 +13,7 @@ const fetchData = async (endpoint) => {
       }
     return response.data;
   } catch (error) {
-    console.log(error)
+    
     throw error.response.data.message;
   }
 };

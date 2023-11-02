@@ -78,9 +78,9 @@ function DisplayProducts() {
         clearError()
         try {
           const products = await get(`products/${formik.values.productID}`); // 'products' is the endpoint you want to fetch data from
-          console.log(products); // Handle the fetched data as needed
+          
           setSingleData([products]);
-          console.log(singleData)
+        
         } catch (error) {
             setSingleData([]);
         //   console.error(error); // Handle errors if the request fails
